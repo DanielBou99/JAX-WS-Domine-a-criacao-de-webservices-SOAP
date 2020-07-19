@@ -1,0 +1,7 @@
+Gerar o arquivo WSDL
+
+1) Abra um terminal e vá para a pasta do seu projeto, algo como: 
+cd C:\workspace\estoquews
+
+2) Execute o comando wsgen:
+wsgen -wsdl -cp bin br.com.caelum.estoque.ws.EstoqueWS
