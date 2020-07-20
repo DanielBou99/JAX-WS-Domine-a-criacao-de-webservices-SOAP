@@ -5,3 +5,19 @@ cd C:\workspace\estoquews
 
 2) Execute o comando wsgen:
 wsgen -wsdl -cp bin br.com.caelum.estoque.ws.EstoqueWS
+
+SOAP no servidor de aplicação
+
+1) criar um novo projeto web e colar o arquivo WSDL no pacote src
+
+2) ir até a pasta bin do wildfly
+
+3) executar o comando :
+wsconsume.bat -k -n -o "C:\Users\danie\OneDrive\Documents\estoqueweb\src" "C:\Users\danie\OneDrive\Documents\estoqueweb\src\EstoqueWSService.wsdl"
+A primeira String indica o src 
+
+4) Atualizar as classes no projeto Eclipse
+
+5) Deletar a classe EstoqueWSService (Serve para criar um cliente)
+
+6) Criar a classe EstoqueWSImpl ( implements EstoqueWS )
