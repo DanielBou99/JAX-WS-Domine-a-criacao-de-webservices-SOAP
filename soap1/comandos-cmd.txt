@@ -21,3 +21,15 @@ A primeira String indica o src
 5) Deletar a classe EstoqueWSService (Serve para criar um cliente)
 
 6) Criar a classe EstoqueWSImpl ( implements EstoqueWS )
+
+Criar um cliente Java
+
+1) Criar um novo projeto Java Project
+
+2) Ir até a pasta do projeto pelo cmd
+cd C:\Users\danie\OneDrive\Documents\estoqueweb-cliente
+
+3) Executar o comando abaixo (O SERVIDOR DE APLICAÇÃO PRECISA ESTAR RODANDO)
+wsimport -s src -p br.com.caelum.estoque.cliente http://localhost:8080/estoquews-web/EstoqueWS?wsdl
+
+4) Criar uma classe para testar o serviço "TesteServicoWeb"
